@@ -87,6 +87,13 @@ module TwitterCards
     def image?
       image ? true : false
     end
+
+    MANDATORY_ATTRIBUTES.keys.each do |card_type|
+      define_method "#{card_type}?" do
+        self.type == card_type
+      end
+    end
+
     
     # If the Twitter Cards information for this object doesn't contain
     # the mandatory attributes, this will be false.
