@@ -4,7 +4,6 @@ A very simple Ruby library for parsing Twitter Cards information from websites.
 See https://dev.twitter.com/cards/types for more information.
 
 [![Dependency Status](https://gemnasium.com/dklisiaris/twitter_cards.svg)](https://gemnasium.com/dklisiaris/twitter_cards)
-
 [![Build Status](https://travis-ci.org/dklisiaris/twitter_cards.svg?branch=master)](https://travis-ci.org/dklisiaris/twitter_cards)
 
 ## Installation
