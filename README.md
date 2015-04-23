@@ -68,9 +68,9 @@ If you already have parsed html with nokogiri you can use `extract` method.
 article = TwitterCards.extract(doc)
 ```
 
-By default, every attribute is extracted from page. If you want to extract cards only when they have all required attributes you can pass _strict_ option set to true.
+By default, every attribute is extracted from page. If you want to extract cards only when they have all required attributes you can pass _:strict_ option set to true.
 ```ruby
-article = TwitterCards.fetch('http://www.bbc.com/news/technology-32422193', true)
+article = TwitterCards.fetch('http://www.bbc.com/news/technology-32422193', strict: true)
 ```
 
 __Note:__ Both `image` and `image_src` attributes can be accessed with `.image` method.
