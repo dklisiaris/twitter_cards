@@ -3,6 +3,9 @@
 A very simple Ruby library for parsing Twitter Cards information from websites.
 See https://dev.twitter.com/cards/types for more information.
 
+[![Dependency Status](https://gemnasium.com/dklisiaris/twitter_cards.svg)](https://gemnasium.com/dklisiaris/twitter_cards)
+
+
 
 ## Installation
 
@@ -76,6 +79,8 @@ article = TwitterCards.fetch('http://www.bbc.com/news/technology-32422193', stri
 __Note:__ Both `image` and `image_src` attributes can be accessed with `.image` method.
 
 __Note 2:__ Attributes like `app:id:googleplay` are converted to `app_id_googleplay`
+
+__Note 3:__ This library supports only one card per page.
 
 ## Development
 

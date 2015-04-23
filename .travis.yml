@@ -1,3 +1,12 @@
 language: ruby
+install:
+  gem uninstall bundler
+  gem install bundler
+script: "rake"
 rvm:
   - 2.2.1
+  - 2.1.0
+  - 2.0.0
+  - 1.9.3  
+  - rbx-2
+  - rbx-2.5.2 
