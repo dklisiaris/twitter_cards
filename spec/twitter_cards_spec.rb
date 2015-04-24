@@ -43,7 +43,7 @@ describe TwitterCards do
     it 'catches errors' do
       stub_request(:get, 'http://example.com').to_return(:status => 404)
       expect(TwitterCards.fetch('http://example.com')).to eq false
-      RestClient.should_receive(:get).with('http://example.com').and_raise(SocketError)
+      expect(RestClient).to receive(:get).with('http://example.com').and_raise(SocketError)
       expect(TwitterCards.fetch('http://example.com')).to eq false
     end
   end
